@@ -664,7 +664,14 @@
 		<string name="backup_name_invalid">备份名称中 '{1}' 中包含无效字符: '{1}'</string>
 		<string name="no_real_sdcard">设备没有真正的 SD 卡! 中止!</string>
 		<string name="cancel_sideload">取消ADB sideload...</string>
-		<string name="change_fs_err">更换文件系统出错.</string>
-		<string name="theme_ver_err">自定义主题不兼容 TWRP 版本. 请使用官方主题.</string>
+		<string name="change_fs_err">更换文件系统出错.</strin
+        <string name="theme_ver_err">自定义主题不兼容TWRP版本. 请使用官方主题.</string>
+		<string name="swipe_reboot">滑动确认重启</string>
+ 		<string name="recovery_replace_hdr">禁止恢复原版Recovery</string>
+ 		<string name="recovery_replace_note1">禁止系统启动时恢复原版Recovery。</string>
+ 		<string name="recovery_replace_note2">立即禁止系统启动时恢复？</string>
+ 		<string name="recovery_replace_cancel">不禁止</string>
+ 		<string name="swipe_disable_replace">滑动确认禁止</string>
+ 		<string name="disable_replacing">禁止恢复原版Recovery...</string>
 	</resources>
 </language>
