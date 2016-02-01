@@ -31,7 +31,7 @@
 		<string name="adopted_storage">Adopted 存儲</string>
 
 		<!-- GUI XML strings -->
-		<string name="twrp_header">Team Win Recovery Project</string>
+		<string name="twrp_header">TWRP Recovery(cofface)</string>
 		<string name="twrp_watch_header">TWRP %tw_version%</string>
 		<string name="cpu_temp">溫度：%tw_cpu_temp% &#xB0;C</string>
 		<string name="battery_pct">電量：%tw_battery%</string>
@@ -266,8 +266,8 @@
 		<string name="rb_system_btn">系統</string>
 		<string name="rb_poweroff_btn">關機</string>
 		<string name="rb_recovery_btn">Recovery</string>
-		<string name="rb_bootloader_btn">Fastboot</string>
-		<string name="rb_download_btn">Download</string>
+		<string name="rb_bootloader_btn">Bootloader</string>
+		<string name="rb_download_btn">Download模式</string>
 		<string name="turning_off">正在關機…</string>
 		<string name="swipe_power_off">滑動按鈕確認關機</string>
 		<string name="swipe_power_off_s">關機</string>
@@ -666,5 +666,14 @@
 		<string name="cancel_sideload">取消ADB sideload…</string>
 		<string name="change_fs_err">更換檔案系統出錯。</string>
 		<string name="theme_ver_err">自定義主題和TWRP版本不匹配，正使用默認主題。</string>
+		<string name="swipe_reboot">滑動確認重啟</string>
+ 		<string name="recovery_replace_hdr">禁止恢復原版Recovery</string>
+ 		<string name="recovery_replace_note1">禁止系統啟動時恢復原版Recovery。</string>
+ 		<string name="recovery_replace_note2">是否立即禁止恢復原版Recovery？</string>
+ 		<string name="recovery_replace_cancel">不禁止</string>
+ 		<string name="swipe_disable_replace">滑動確認禁止</string>
+ 		<string name="disable_replacing">禁止恢復原版Recovery中...</string>
+		<string name="cofface_modify">編譯修改:cofface@163.com</string>
+		<string name="up_a_level">(返回上級目錄)</string>
 	</resources>
 </language>

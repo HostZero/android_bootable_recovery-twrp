@@ -170,10 +170,12 @@ int main(int argc, char **argv) {
 		} else {
 			free(contexts);
 			gui_msg("full_selinux=Full SELinux support is present.");
+            gui_msg("cofface_modify=Modify by cofface@163.com");
 		}
 	}
 #else
 	gui_warn("no_selinux=No SELinux support (no libselinux).");
+    gui_msg("cofface_modify=Modify by cofface@163.com");
 #endif
 
 	PartitionManager.Mount_By_Path("/cache", true);
