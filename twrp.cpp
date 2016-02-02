@@ -170,12 +170,12 @@ int main(int argc, char **argv) {
 		} else {
 			free(contexts);
 			gui_msg("full_selinux=Full SELinux support is present.");
-            gui_msg("cofface_modify=Modify by cofface@163.com");
+            gui_msg("cofface_modify=Modify by cofface@cofface.com");
 		}
 	}
 #else
 	gui_warn("no_selinux=No SELinux support (no libselinux).");
-    gui_msg("cofface_modify=Modify by cofface@163.com");
+    gui_msg("cofface_modify=Modify by cofface@cofface.com");
 #endif
 
 	PartitionManager.Mount_By_Path("/cache", true);
@@ -244,6 +244,11 @@ int main(int argc, char **argv) {
 				if (*ptr) {
 					Reboot_Value = *ptr;
 				}
+#ifdef BOARD_FIX_NUBIA_OTA
+            } else if (*argptr == 'f') {
+            LOGINFO("Add support nubia OTA by cofface@cofface.com.\n");
+            Zip_File = "/data/dm/delta/system.delta";
+#endif
 			}
 		}
 		printf("\n");
