@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <language>
-	<display>Chinese Traditional</display>
+	<display>Chinese (Traditional)</display>
 
 	<resources>
 		<!-- Font overrides - only change these if your language requires special characters -->
@@ -28,7 +28,7 @@
 		<!-- This is a rarely used partition on a Micro SD card for a very old app2sd system -->
 		<string name="sdext">SD-EXT</string>
 		<string name="adopted_data">Adopted Data</string>
-		<string name="adopted_storage">Adopted 存儲</string>
+		<string name="adopted_storage">Adopted存儲</string>
 
 		<!-- GUI XML strings -->
 		<string name="twrp_header">TWRP Recovery(cofface)</string>
@@ -89,7 +89,7 @@
 		<string name="swipe_confirm">   確認</string>
 		<string name="zip_add_btn">添加更多刷機包</string>
 		<string name="zip_clear_btn">清除刷機佇列</string>
-		<string name="install_zip_count_hdr">正在刷入第%tw_zip_queue_count%個，共%tw_zip_index%個刷機包</string>
+		<string name="install_zip_count_hdr">正在刷入第%tw_zip_index%個，共%tw_zip_queue_count%個</string>
 		<string name="installing_zip_xml">正在安裝: %tw_file%</string>
 		<string name="failed">失敗</string>
 		<string name="successful">成功</string>
@@ -140,17 +140,18 @@
 		<string name="invalid_part_sel">無效的分區</string>
 		<string name="format_data_hdr">格式化Data分區</string>
 		<string name="format_data_btn">格式化Data分區</string>
-		<string name="format_data_ptr1">格式化 Data 分區將會清空您安裝的所有</string>
-		<string name="format_data_ptr2">軟體、圖片、視頻媒體、短信和通話記錄</string>
+		<string name="format_data_ptr1">格式化Data分區將會清空您安裝的所有</string>
+		<string name="format_data_ptr2">軟體、圖片、視頻、媒體，</string>
 		<string name="format_data_ptr3">以及對內置存儲所做的加密等。</string>
-		<string name="format_data_adopted">包括Adopted存儲</string>
-		<string name="format_data_lcp1">格式化 Data 分區將會清空您安裝的所有軟體、圖片、視頻媒體、短信和通話記錄</string>
+		<string name="format_data_adopted">也包括Adopted存儲</string>
+		<string name="format_data_lcp1">格式化Data分區將會清空您安裝的所有軟體、圖片、視頻、媒體，</string>
 		<string name="format_data_lcp2">以及對內置存儲所做的加密等。</string>
 		<string name="format_data_wtc1">格式化Data分區會清除您的所有軟體</string>
 		<string name="format_data_wtc2">備份和媒體數據，無法撤銷。</string>
 		<string name="format_data_undo">執行此操作後將無法恢復。</string>
 		<string name="format_data_complete">格式化Data分區完成</string>
-		<string name="yes_continue">輸入 yes 繼續，按返回按鈕取消。</string>
+		<!-- Translator note: the word "yes" must remain English! -->
+		<string name="yes_continue">輸入yes繼續，按返回按鈕取消。</string>
 		<string name="part_opt_hdr">分區名：%tw_partition_name%</string>
 		<string name="sel_act_hdr">選擇操作</string>
 		<string name="file_sys_opt">檔案系統選項</string>
@@ -238,7 +239,7 @@
 		<string name="restore_try_decrypt_s">正在嘗試解密</string>
 		<string name="restore_backup_date">備份於%tw_restore_file_date%</string>
 		<string name="restore_sel_part">選擇要恢復的分區：</string>
-		<string name="restore_enable_md5_chk">啟用MD5驗證備份檔案</string>
+		<string name="restore_enable_md5_chk">啟用MD5校驗備份檔案</string>
 		<string name="restore_complete">恢復完成。</string>
 		<string name="swipe_restore">滑動按鈕確認恢復</string>
 		<string name="swipe_restore_s">   恢復</string>
@@ -255,13 +256,13 @@
 		<string name="mount_sys_ro_chk">掛載系統為只讀</string>
 		<string name="mount_sys_ro_s_chk">掛載System分區為只讀</string>
 		<string name="decrypt_data_btn">解密Data分區</string>
-		<string name="disable_mtp_btn">啟用 MTP 模式</string>
-		<string name="enable_mtp_btn">停用 MTP 模式</string>
+		<string name="disable_mtp_btn">啟用MTP模式</string>
+		<string name="enable_mtp_btn">停用MTP模式</string>
 		<string name="mount_usb_storage_btn">掛載USB存儲</string>
 		<string name="usb_storage_hdr">USB存儲</string>
 		<string name="usb_stor_mnt1">已掛載 USB 存儲</string>
-		<string name="usb_stor_mnt2">請確認解除掛載前先從</string>
-		<string name="usb_stor_mnt3">電腦上安全的移除設備！</string>
+		<string name="usb_stor_mnt2">從您的電腦卸載之前</string>
+		<string name="usb_stor_mnt3">一定要安全地移除設備！</string>
 		<string name="unmount_btn">卸載</string>
 		<string name="rb_system_btn">系統</string>
 		<string name="rb_poweroff_btn">關機</string>
@@ -287,8 +288,8 @@
 		<string name="swipe_allow_mod">滑動按鈕允許修改</string>
 		<string name="swipe_allow_mod_s">允許修改</string>
 		<string name="settings_hdr">設置</string>
-		<string name="settings_gen_hdr">常規設置</string>
-		<string name="settings_gen_s_hdr">常規設置</string>
+		<string name="settings_gen_hdr">常規</string>
+		<string name="settings_gen_s_hdr">常規</string>
 		<string name="settings_gen_btn">常規</string>
 		<string name="use_rmrf_chk">使用rm -rf命令代替格式化</string>
 		<string name="use24clock_chk">使用24小時格式</string>
@@ -304,7 +305,7 @@
 		<string name="settings_screen_bright_btn">螢幕亮度</string>
 		<string name="settings_vibration_btn">振動</string>
 		<string name="settings_language_btn">語言</string>
-		<string name="time_zone_hdr">時區設置</string>
+		<string name="time_zone_hdr">時區</string>
 		<string name="sel_tz_list">選擇時區：</string>
 		<!-- Translator note: if it does not make sense to translate the locations or if it makes more sense,
 				feel free to change the location listed or drop the location entirely and just call it UTC -6 -->
@@ -350,7 +351,7 @@
 		<string name="screen_to_na">螢幕超時設置不可用</string>
 		<string name="screen_bright_slider">螢幕亮度：%tw_brightness_pct%%</string>
 		<string name="screen_bright_na">螢幕亮度設置不可用</string>
-		<string name="vibration_hdr">振動設置</string>
+		<string name="vibration_hdr">振動</string>
 		<string name="button_vibration_hdr">按鈕振動</string>
 		<string name="kb_vibration_hdr">鍵盤振動</string>
 		<string name="act_vibration_hdr">操作振動</string>
@@ -369,7 +370,7 @@
 		<string name="part_sd_btn">分區SD卡</string>
 		<string name="part_sd_s_btn">SD卡</string>
 		<string name="file_manager_btn">檔案管理</string>
-		<string name="language_hdr">語言設置</string>
+		<string name="language_hdr">語言</string>
 		<string name="terminal_btn">終端命令</string>
 		<string name="reload_theme_btn">重載主題</string>
 		<string name="dumlock_btn">HTC Dumlock</string>
@@ -378,7 +379,7 @@
 		<string name="injecting_twrp">正在重新注入TWRP…</string>
 		<string name="inject_twrp_complete">TWRP注入完成。</string>
 		<string name="swipe_to_confirm">滑動按鈕確認</string>
-		<string name="part_sd_hdr">對SD卡分區</string>
+		<string name="part_sd_hdr">SD卡分區</string>
 		<string name="invalid_partsd_sel">您必須選擇一個可移動設備</string>
 		<string name="part_sd_lose">您將會丟失SD卡上的所有檔案！</string>
 		<string name="part_sd_undo">此操作無法恢復！</string>
