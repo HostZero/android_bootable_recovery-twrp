@@ -1,0 +1,6 @@
+service recovery /sbin/recovery
+    disabled
+service unpack_font /sbin/unpack_font.sh
+    oneshot
+on property:recovery.font.unpacked=1
+    start recovery

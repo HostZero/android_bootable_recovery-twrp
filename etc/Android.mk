@@ -31,6 +31,16 @@ include $(BUILD_PREBUILT)
 
 endif
 
+ifeq ($(TW_COMPRESS_FONTS), true)
+include $(CLEAR_VARS)
+LOCAL_MODULE := init.recovery.font.rc
+LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_CLASS := RECOVERY_EXECUTABLES
+LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT)
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+include $(BUILD_PREBUILT)
+endif
+
 ifeq ($(TWRP_INCLUDE_LOGCAT), true)
     ifeq ($(TARGET_USES_LOGD), true)
 

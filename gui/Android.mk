@@ -116,7 +116,11 @@ ifeq ($(TWRP_NEW_THEME),true)
     TWRP_RES += $(commands_recovery_local_path)/gui/theme/common/languages
     TWRP_RES += $(commands_recovery_local_path)/gui/theme/common/$(word 1,$(subst _, ,$(TW_THEME))).xml
 ifeq ($(TW_EXTRA_LANGUAGES),true)
+ifeq ($(TW_COMPRESS_FONTS),true)
+	TWRP_RES += $(commands_recovery_local_path)/gui/theme/extra-languages/compress_fonts
+else
     TWRP_RES += $(commands_recovery_local_path)/gui/theme/extra-languages/fonts
+endif
     TWRP_RES += $(commands_recovery_local_path)/gui/theme/extra-languages/languages
 endif
 # for future copying of used include xmls and fonts:
