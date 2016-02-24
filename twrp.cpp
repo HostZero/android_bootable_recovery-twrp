@@ -112,6 +112,14 @@ int main(int argc, char **argv) {
 	time_t StartupTime = time(NULL);
 	printf("Starting TWRP %s on %s (pid %d)\n", TW_VERSION_STR, ctime(&StartupTime), getpid());
 
+#ifndef TW_USE_TOOLBOX
+    if (TWFunc::Path_Exists("/sbin/toybox")) {
+        LOGINFO("getprop and setprop use toybox prebuilt symlink by cofface.\n");
+        TWFunc::Exec_Cmd("/sbin/ln -s /sbin/toybox /sbin/getprop");
+        TWFunc::Exec_Cmd("/sbin/ln -s /sbin/toybox /sbin/setprop");
+         }
+#endif
+
 	// Load default values to set DataManager constants and handle ifdefs
 	DataManager::SetDefaultValues();
 	printf("Starting the UI...");
