@@ -685,5 +685,6 @@
 		<string name="up_a_level">(返回上级目录)</string>
 		<string name="restore_ors">正在恢复备份</string>
 		<string name="installing_zip_ors">正在安装zip刷机包</string>
+		<string name="install_reboot">将在5秒后重启手机</string>
 	</resources>
 </language>
