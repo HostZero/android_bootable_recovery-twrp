@@ -845,7 +845,10 @@ error:
 
 extern "C" int gui_start(void)
 {
-	return gui_startPage("main", 1, 0);
+	if (DataManager::GetIntValue("tw_gui_done") != 0)
+		return 0;
+	else
+		return gui_startPage("main", 1, 0);
 }
 
 extern "C" int gui_startPage(const char *page_name, const int allow_commands, int stop_on_page_done)

@@ -1564,8 +1564,6 @@ int GUIAction::openrecoveryscript(std::string arg __unused)
 		operation_end(0);
 	} else {
 		int op_status = OpenRecoveryScript::Run_OpenRecoveryScript_Action();
-		if (!op_status)
-			DataManager::SetValue("tw_gui_done", 1);
 		operation_end(op_status);
 	}
 	return 0;
@@ -1851,17 +1849,15 @@ int GUIAction::setlanguage(std::string arg __unused)
 
 int GUIAction::disable_stock_recovery_replace(std::string arg __unused)
 {
- 	int op_status = 0;
- 
- 	operation_start("Disable stock recovery replace");
- 	if (simulate) {
- 		simulate_progress_bar();
- 	} else {
- 	gui_msg("rename_stock=Renamed stock recovery file in /system to prevent the stock ROM from replacing TWRP.");
- 		rename("/system/recovery-from-boot.p", "/system/recovery-from-boot.bak");
- 		sync();
- 	}
- 	usleep(2000000);
- 	operation_end(op_status);
+	int op_status = 0;
+
+	operation_start("Disable stock recovery replace");
+	gui_msg("rename_stock=Renamed stock recovery file in /system to prevent the stock ROM from replacing TWRP.");
+	if (rename("/system/recovery-from-boot.p", "/system/recovery-from-boot.bak") < 0)
+		op_status = 1; // fail
+	else
+		sync();
+
+	operation_end(op_status);
 	return 0;
 }
