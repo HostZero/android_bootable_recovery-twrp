@@ -673,7 +673,7 @@
  		<string name="recovery_replace_cancel">不禁止</string>
  		<string name="swipe_disable_replace">滑动确认禁止</string>
  		<string name="disable_replacing">禁止恢复原版Recovery中...</string>
-        <string name="cofface_modify">编译修改:cofface@cofface.com</string>
+        <string name="cofface_modify">编译修改:cofface@foxmail.com</string>
 		<string name="up_a_level">(返回上级目录)</string>
 		<string name="restore_ors">正在恢复备份</string>
 		<string name="installing_zip_ors">正在安装zip刷机包</string>

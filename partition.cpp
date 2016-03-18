@@ -1121,7 +1121,7 @@ bool TWPartition::Mount(bool Display_Error) {
 		string Command = "mount -o bind '" + Symlink_Path + "' '" + Symlink_Mount_Point + "'";
 #else
         string Command = "rm -rf sdcard; ln -s '" + Symlink_Path + "' '" + Symlink_Mount_Point + "'";
-        LOGINFO("data/media use symlink type by cofface@cofface.com.\n");
+        LOGINFO("data/media use symlink type by cofface@foxmail.com.\n");
 #endif
 		TWFunc::Exec_Cmd(Command);
 	}
