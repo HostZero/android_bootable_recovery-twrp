@@ -453,6 +453,14 @@
 		<string name="sideload_confirm">ADB Sideload 线刷模式</string>
 		<string name="sideload_usage">使用方法: adb sideload 卡刷包文件名.zip</string>
 		<string name="sideload_complete">ADB Sideload 线刷完成</string>
+        <string name="fix_contexts_hdr">修复SELinux</string>
+        <string name="fix_contexts_note1">注意：很少情况下需要修复SELinux上下文。</string>
+        <string name="fix_contexts_note2">修复SELinux上下文可能会导致</string>
+        <string name="fix_contexts_note3">您的设备无法正常启动。</string>
+        <string name="swipe_to_fix_contexts">滑动按钮确认修复</string>
+        <string name="swipe_fix_contexts">   修复上下文</string>
+        <string name="fixing_contexts">正在修复…</string>
+        <string name="fix_contexts_complete">修复SELinux上下文完成。</string>
 		<string name="fix_perms_hdr">修复权限</string>
 		<string name="fix_perms_note">注意: 很少需要修复权限.</string>
 		<string name="fix_perms_selinux_chk">修复SELinux contexts</string>
