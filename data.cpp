@@ -706,7 +706,7 @@ void DataManager::SetDefaultValues()
 	mData.SetValue("tw_background_thread_running", "0");
 	mData.SetValue(TW_RESTORE_FILE_DATE, "0");
 	mPersist.SetValue("tw_military_time", "0");
->>>>>>> fe91611... DataManager Updates
+
 #ifdef TW_NO_SCREEN_TIMEOUT
 	mConst.SetValue("tw_screen_timeout_secs", "0");
 	mConst.SetValue("tw_no_screen_timeout", "1");

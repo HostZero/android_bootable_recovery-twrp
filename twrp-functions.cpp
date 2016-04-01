@@ -542,7 +542,6 @@ int TWFunc::tw_reboot(RebootCommand command)
   	TWFunc::Update_Log_File();
   	sleep(1);
 #endif
-=======
 
 	switch (command) {
 		case rb_current:
