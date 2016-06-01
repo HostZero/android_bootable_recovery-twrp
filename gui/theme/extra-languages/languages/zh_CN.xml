@@ -685,6 +685,10 @@
 		<string name="up_a_level">(返回上级目录)</string>
 		<string name="restore_ors">正在恢复备份</string>
 		<string name="installing_zip_ors">正在安装zip刷机包</string>
-		<string name="install_reboot">将在5秒后重启手机</string>
+		<string name="install_reboot" version="2">手机将在%tw_sleep% 秒后重启</string>
+		<string name="adbbackup_error">ADB备份出错. 正在退出..."</string>
+		<string name="adbbackup_control_error">无法写入adb控制信道</string>
+		<string name="twrp_adbbu_option">--twrp选项必须启用twrp adb</string>
+		<string name="partition_not_found">路径: 在分区列表未找到{1} </string>
 	</resources>
 </language>
